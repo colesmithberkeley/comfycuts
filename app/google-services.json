@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "931482898301",
+    "firebase_url": "https://comfycuts-d60a5.firebaseio.com",
+    "project_id": "comfycuts-d60a5",
+    "storage_bucket": "comfycuts-d60a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931482898301:android:615fea2832e38d41",
+        "android_client_info": {
+          "package_name": "com.example.colesmith.comfycuts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931482898301-q16j34et6r4eh08vl5108fp6a04tvnpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.colesmith.comfycuts",
+            "certificate_hash": "b4be5756e58bb659b318e4b7ede5bc38f0c0be9e"
+          }
+        },
+        {
+          "client_id": "931482898301-39q9aqva6vqsktqdtcs0d5j9tkbbamss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdai2riMik851_t5jGeMyiLq_AjRSR4Uc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931482898301-39q9aqva6vqsktqdtcs0d5j9tkbbamss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
