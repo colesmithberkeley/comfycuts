@@ -5,16 +5,19 @@ import com.example.colesmith.comfycuts.Models.Salon;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class User extends Object {
 
-    private String name;
-    private List<String> preferences;
-    private List<String> notes;
-    private List<Appointment> appointments;
-    private List<Salon> favorites;
+    public String id;
+    public String name;
+    public List<String> preferences;
+    public List<String> notes;
+    public List<Appointment> appointments;
+    public List<Salon> favorites;
 
     public User(String name, List<String> preferences, List<String> notes) {
+        this.id = UUID.randomUUID().toString();
         this.name = name;
         this.preferences = preferences;
         this.notes = notes;

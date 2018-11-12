@@ -7,6 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.colesmith.comfycuts.Models.User;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
+
 public class DiscoveryActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
@@ -39,6 +45,17 @@ public class DiscoveryActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference root = database.getReference();
+
+        ArrayList<String> preferences = new ArrayList<>();
+        preferences.add("good haircut");
+        ArrayList<String> notes = new ArrayList<>();
+        notes.add("I have no notes");
+        User testUser = new User("Josh Goldman", preferences, notes);
+
+        root.child("users").child(testUser.id).push().setValue(testUser);
     }
 
 }
